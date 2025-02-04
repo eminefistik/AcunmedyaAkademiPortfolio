@@ -15,11 +15,14 @@ namespace AcunmedyaAkademiPortfolio.Models
     public partial class TblAbout
     {
         public int AboutId { get; set; }
-        public string DoğumTarihi { get; set; }
+        public string Baslik { get; set; }
+        public string Aciklama { get; set; }
+        public string DogumTarihi { get; set; }
         public string Website { get; set; }
         public string Telefon { get; set; }
-        public string Şehir { get; set; }
-        public string Yaş { get; set; }
+        public string sehir { get; set; }
+        public string Yas { get; set; }
+        public string Egitim { get; set; }
         public string Email { get; set; }
         public string Freelance { get; set; }
     }

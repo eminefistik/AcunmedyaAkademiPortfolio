@@ -56,7 +56,9 @@ namespace AcunmedyaAkademiPortfolio.Controllers
 
         public PartialViewResult PartialAbout()
         {
-            return PartialView();
+            var values = db.TblAbout.ToList();
+
+            return PartialView(values);
         }
 
 

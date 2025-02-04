@@ -27,11 +27,14 @@
             <PropertyRef Name="AboutId" />
           </Key>
           <Property Name="AboutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="DoğumTarihi" Type="nvarchar" MaxLength="200" />
+          <Property Name="Baslik" Type="nvarchar" MaxLength="200" />
+          <Property Name="Aciklama" Type="nvarchar" MaxLength="200" />
+          <Property Name="DogumTarihi" Type="nvarchar" MaxLength="200" />
           <Property Name="Website" Type="nvarchar" MaxLength="200" />
           <Property Name="Telefon" Type="nvarchar" MaxLength="200" />
-          <Property Name="Şehir" Type="nvarchar" MaxLength="200" />
-          <Property Name="Yaş" Type="nvarchar" MaxLength="200" />
+          <Property Name="sehir" Type="nvarchar" MaxLength="200" />
+          <Property Name="Yas" Type="nvarchar" MaxLength="200" />
+          <Property Name="Egitim" Type="nvarchar" MaxLength="200" />
           <Property Name="Email" Type="nvarchar" MaxLength="200" />
           <Property Name="Freelance" Type="nvarchar" MaxLength="200" />
         </EntityType>
@@ -253,11 +256,14 @@
             <PropertyRef Name="AboutId" />
           </Key>
           <Property Name="AboutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="DoğumTarihi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Baslik" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DogumTarihi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Website" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Telefon" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="Şehir" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="Yaş" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="sehir" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Yas" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Egitim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Freelance" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
         </EntityType>
@@ -365,11 +371,14 @@
               <MappingFragment StoreEntitySet="TblAbout">
                 <ScalarProperty Name="Freelance" ColumnName="Freelance" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Yaş" ColumnName="Yaş" />
-                <ScalarProperty Name="Şehir" ColumnName="Şehir" />
+                <ScalarProperty Name="Egitim" ColumnName="Egitim" />
+                <ScalarProperty Name="Yas" ColumnName="Yas" />
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
                 <ScalarProperty Name="Telefon" ColumnName="Telefon" />
                 <ScalarProperty Name="Website" ColumnName="Website" />
-                <ScalarProperty Name="DoğumTarihi" ColumnName="DoğumTarihi" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
                 <ScalarProperty Name="AboutId" ColumnName="AboutId" />
               </MappingFragment>
             </EntityTypeMapping>
