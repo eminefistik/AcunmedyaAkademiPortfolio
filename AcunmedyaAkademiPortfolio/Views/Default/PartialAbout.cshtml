@@ -1,0 +1,74 @@
+﻿﻿@model List<AcunmedyaAkademiPortfolio.Models.TblAbout>
+
+<section id="about" class="about section">
+    @foreach (var item in Model)
+    {
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>@item.Baslik</h2>
+            <p>@item.Aciklama</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4 justify-content-center">
+
+                <div class="col-lg-4">
+                    <img src="/MyResume-1.0.0/assets/img/ww.jpg" class="img-fluid" alt="">
+
+
+                </div>
+
+
+                <div class="col-lg-8 content">
+
+                    <h2>.Net Developer &amp; Web Geliştirici</h2>
+                    <p class="fst-italic py-3">
+                        Bana ait kişisel bilgilere aşağıdaki ekrandan erişim sağlayabilirsiniz.
+                    </p>
+
+
+                    <div class="row">
+
+
+                        <div class="col-lg-6">
+
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Doğum Tarihi:</strong> <span>@item.DogumTarihi</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span></span>@item.Website</li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Telefon:</strong> <span> </span>@item.Telefon</li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Şehir:</strong> <span></span>@item.sehir</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Yaş:</strong> <span></span>@item.Yas</li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Eğitim:</strong> <span></span>@item.Egitim</li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span></span>@item.Email</li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span></span>@item.Freelance</li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="py-3">
+                        Freelance iş tekliflerine açığım.Yeni öğrenmelere açığım.Daha önce Bilgi işlem ve   E-Ticaret üzerinde stajyerlik deneyimim oldu.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+</section>
+
+

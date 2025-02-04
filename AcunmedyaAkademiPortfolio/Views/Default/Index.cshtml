@@ -1,0 +1,149 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead","Default")
+
+<body class="index-page">
+
+    @Html.Action("PartialSidebar","Default")
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        @Html.Action("PartialHeroSection", "Default")
+        <!-- /Hero Section -->
+        <!-- About Section -->
+        @Html.Action("PartialAbout","Default")
+        <!-- /About Section -->
+        <!-- Stats Section -->
+
+        <section id="stats" class="stats section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <i class="bi bi-emoji-smile"></i>
+                        <div class="stats-item">
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Referans Sayısı</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <i class="bi bi-journal-richtext"></i>
+                        <div class="stats-item">
+                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Yeteneklerim</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <i class="bi bi-journal-richtext"></i>
+                        <div class="stats-item">
+                            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Projelerim</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                        <i class="bi bi-people"></i>
+                        <div class="stats-item">
+                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Test</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Stats Section -->
+        <!-- Skills Section -->
+        @Html.Action("PartialSkill", "Default")
+        <!-- /Skills Section -->
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+
+                        @Html.Action("PartialEducation", "Default")
+
+                    </div>
+
+                    @Html.Action("PartialExperience", "Default")
+                </div>
+
+            </div>
+
+        </section><!-- /Resume Section -->
+        <!-- Portfolio Section -->
+
+        @Html.Action("PartialServiced", "Default")
+
+        <!-- /Portfolio Section -->
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            @Html.Action("PartialProject", "Default")
+
+        </section><!-- /Services Section -->
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+
+            @Html.Action("Partialtestimoniall", "Default")
+        </section><!-- /Testimonials Section -->
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+
+
+            @Html.Action("PartialMessage", "Default")
+
+        </section><!-- /Contact Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <h3 class="sitename">Emine Fıstık</h3>
+           
+            <div class="social-links d-flex justify-content-center">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/l.eminee.1/"><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-skype"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="container">
+                <div class="">
+                    <span></span> <strong class="px-1 sitename"></strong> <span></span>
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you've purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                     <a ></a>  <a></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Html.Action("PartialScripts","Default")
+
+</body>
+
+</html>
